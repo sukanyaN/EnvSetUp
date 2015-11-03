@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt-get update -y
-sudo apt-get install -y apache2 git php5 php5-curl mysql-client curl php5-mysql
+sudo apt-get install -y apache2 git php5 php5-curl mysql-client curl php5-mysql &> /tmp/phpinstall.txt
 
 git clone https://github.com/sukanyaN/AppSetUp.git
 git clone https://github.com/sukanyaN/itmo-544-final.git
