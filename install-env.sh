@@ -1,7 +1,6 @@
 #!/bin/bash
-
 sudo apt-get update -y
-sudo apt-get install -y apache2 git php5 php5-curl mysql-client curl php5-mysql &> /tmp/phpinstall.txt
+sudo apt-get install -y apache2 git php5 php5-curl mysql-client curl php5-mysql &> /tmp/phpinstaller.txt
 
 git clone https://github.com/sukanyaN/AppSetUp.git
 git clone https://github.com/sukanyaN/itmo-544-final.git
@@ -16,6 +15,9 @@ sudo php composer.phar require aws/aws-sdk-php &> /tmp/runcomposer.txt
 sudo mv vendor /var/www/html &> /tmp/movevendor.txt
 
 echo "Hello!" > /tmp/hello.txt
+
+echo "done" > /tmp/hello.txt
+
 
 
 
